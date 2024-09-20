@@ -46,7 +46,6 @@ public class CuidadorController {
 
         cuidador.setNome(detalhesCuidador.getNome());
         cuidador.setSobrenome(detalhesCuidador.getSobrenome());
-        // Atualize os outros campos conforme necessário
 
         Cuidador updatedCuidador = cuidadorRepository.save(cuidador);
         return ResponseEntity.ok(updatedCuidador);
